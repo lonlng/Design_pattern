@@ -10,4 +10,6 @@ public abstract class Builder {
 
     public abstract void close();
 
+    public abstract String getResult();
+
 }

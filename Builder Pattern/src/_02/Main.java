@@ -6,12 +6,12 @@ public class Main {
         //String choice="plain";
         String choice = "plain";
         if (choice == "plain") {
-            TextBuilder t = new TextBuilder();
+            Builder t = new TextBuilder();
             Director d = new Director(t);
             d.construct();
             System.out.println(t.getResult());
         } else if (choice == "html") {
-            HtmlBuilder html = new HtmlBuilder();
+            Builder html = new HtmlBuilder();
             Director d = new Director(html);
             d.construct();
             System.out.println(html.getResult());
