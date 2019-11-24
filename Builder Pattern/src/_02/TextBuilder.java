@@ -2,20 +2,20 @@ package _02;
 
 public class TextBuilder extends Builder {
 
-    StringBuffer sb=new StringBuffer();
+    StringBuffer sb = new StringBuffer();
 
     public void makeTitle(String title) {
         sb.append("=====================");
-        sb.append("["+title+"]"+"\n");
+        sb.append("[" + title + "]" + "\n");
     }
 
     public void makeString(String str) {
-        sb.append("@"+str+"\n");
+        sb.append("@" + str + "\n");
     }
 
     public void makeItems(String[] items) {
-        for(int i=0;i<items.length;i++){
-            sb.append("   ."+items[i]+"\n");
+        for (int i = 0; i < items.length; i++) {
+            sb.append("   ." + items[i] + "\n");
         }
     }
 
@@ -23,7 +23,7 @@ public class TextBuilder extends Builder {
         sb.append("=====================");
     }
 
-    public String getResult(){
+    public String getResult() {
         return sb.toString();
     }
 

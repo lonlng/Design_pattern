@@ -1,3 +1,5 @@
+package _01;
+
 public class SingletonPatternDemo {
     public static void main(String[] args) {
         System.out.println("hello world!");
@@ -5,7 +7,7 @@ public class SingletonPatternDemo {
         object.showMessage();
         object.showMessage();
 
-//        Test01 object2 = Test01.getInstance();
+//        _01.Test01 object2 = _01.Test01.getInstance();
 //        object2.showMessage();
 //        object2.showMessage();
 

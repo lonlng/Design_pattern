@@ -1,3 +1,5 @@
+package _01;
+
 public class SingleObject {
 
     //创建SingleObject对象,instance

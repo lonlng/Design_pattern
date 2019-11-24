@@ -1,3 +1,5 @@
+package _01;
+
 import java.util.Random;
 
 public class Test01 {

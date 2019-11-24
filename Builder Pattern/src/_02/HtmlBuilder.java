@@ -8,25 +8,26 @@ public class HtmlBuilder extends Builder {
 
     private String filename;
     private PrintWriter pw;
+
     public void makeTitle(String title) {
-        filename=title+".html";
+        filename = ".\\Builder Pattern\\src\\_02\\" + title + ".html";
         try {
             pw = new PrintWriter(new FileWriter(filename));
         } catch (IOException e) {
             e.printStackTrace();
         }
-        pw.println("<html><head><title>"+title+"</title></head><body>");
-        pw.println("<h1>"+title+"</h1>");
+        pw.println("<html><head><title>" + title + "</title></head><body>");
+        pw.println("<h1>" + title + "</h1>");
     }
 
     public void makeString(String str) {
-        pw.println("<p>"+str+"</p>");
+        pw.println("<p>" + str + "</p>");
     }
 
     public void makeItems(String[] items) {
         pw.println("<ul>");
-        for(int i=0;i<items.length;i++){
-            pw.println("<li>"+items[i]+"</li>");
+        for (int i = 0; i < items.length; i++) {
+            pw.println("<li>" + items[i] + "</li>");
         }
         pw.println("</ul>");
     }
@@ -35,7 +36,8 @@ public class HtmlBuilder extends Builder {
         pw.println("</body></html>");
         pw.close();
     }
-    public String getResult(){
+
+    public String getResult() {
         return filename;
     }
 }

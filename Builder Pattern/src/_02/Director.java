@@ -2,12 +2,14 @@ package _02;
 
 public class Director {
     private Builder builder;
-    public Director(Builder builder){
-        this.builder=builder;
+
+    public Director(Builder builder) {
+        this.builder = builder;
     }
-    public void construct(){
-        String [] items1=new String[]{"奏国歌","升国旗"};
-        String [] items2=new String[]{"观众鼓掌","有序撤离"};
+
+    public void construct() {
+        String[] items1 = new String[]{"奏国歌", "升国旗"};
+        String[] items2 = new String[]{"观众鼓掌", "有序撤离"};
         builder.makeTitle("今日头条");
         builder.makeString("毕业典礼");
         builder.makeItems(items1);
