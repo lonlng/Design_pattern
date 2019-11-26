@@ -13,7 +13,6 @@ public class Student {
         return age;
     }
 
-
     public String getRollNo() {
         return rollNo;
     }
@@ -29,5 +28,4 @@ public class Student {
     public void setName(String name) {
         this.name = name;
     }
-
 }
