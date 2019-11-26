@@ -16,7 +16,8 @@ public class StudentController {
     public void setStudentRollNo(String RolloName) {
         model.setRollNo(RolloName);
     }
-    public void setStudentAge(int age){
+
+    public void setStudentAge(int age) {
         model.setAge(age);
     }
 
@@ -25,7 +26,7 @@ public class StudentController {
     }
 
     public void updateView() {
-        view.printStudentDetails(model.getName(), model.getRollNo(),model.getAge());
+        view.printStudentDetails(model.getName(), model.getRollNo(), model.getAge());
     }
 
 
