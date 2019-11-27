@@ -7,7 +7,7 @@ public class MVCPatternDemo {
         StudentController controller = new StudentController(model, view);
         controller.updateView();
         controller.setStudentsName("john");
-        controller.setStudentRollNo("11");
+        controller.setStudentRollNo("十一");
         controller.setStudentAge(21);
         controller.updateView();
     }
@@ -15,7 +15,7 @@ public class MVCPatternDemo {
     private static Student retrieveStudentFromDatabase() {
         Student student = new Student();
         student.setName("Robert");
-        student.setRollNo("10");
+        student.setRollNo("十");
         student.setAge(20);
         return student;
     }
